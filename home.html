@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style>
+    body {
+      background-color: #005eb8;
+      font-family: sans-serif;
+    }
+
+    header {
+      background-color: #005eb8;
+      padding: 20px;
+    }
+
+    nav ul {
+      background-color: #1d0a61;
+      list-style: none;
+      border: 1px solid black;
+      color: white;
+      margin: 0% auto;
+      text-align: center;
+    }
+
+    nav ul li{
+      padding: 10px 20px;
+      display: inline-block;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      background-color: white;
+      /* border: 1px solid black; */
+      margin-top: 3px;
+      padding-top: 5px;
+      padding-bottom: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    section h1 {
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    section hr {
+      color: black;
+    }
+
+    .logo {
+      width: 200px;
+      margin: 0% auto;
+    }
+
+    .logo img {
+      width: 100%;
+      margin-bottom: 70px;
+    }
+
+    .signout {
+      background-color: rgb(10, 9, 9);
+      cursor: pointer;
+      color: #005eb8;
+      border: 0.5px solid black;
+      padding: 4px 10px;
+      font-size: 15px;
+      border-radius: 10px;
+      float: right;
+      margin-right: -10px;
+    }
+
+    .greetings {
+      color: white;
+      font-weight: 400;
+      font-size: 18px;
+      margin-left: -14px;
+    }
+
+    .Balance {
+      width: 100%;
+      display: flex;
+    }
+
+    .Available {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    }
+    .Available > div{
+      background-color: #dddddd;
+      padding: 20px;
+      width: 50%;
+    }
+
+    .width {
+      width: 100%;
+    }
+
+    .Cashapp {
+      background-color: aliceblue;
+      padding: 20px;
+      border: 1px solid #005eb8;
+    }
+
+    .Cashapp img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    #Transfer {
+      width: 100%;
+      background-color: #00d54b;
+      color: white;
+      border: 1px solid white;
+      border-radius: 5px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .Cashapp p {
+      font-size: 13px;
+      margin-top: 0;
+      font-weight: 400;
+    }
+      #Reciept {
+            width: 100%;
+            padding: 50px;
+            text-align: center;
+margin-left: -50px;
+font-family:sans-serif;
+
+        }
+
+        #Reciept h1 {
+            font-size: 8px;
+            font-weight: 600;
+           
+        }
+
+        #Reciept img {
+            width: 20%;
+            margin: 0% auto
+        }
+
+        .note {
+
+            background-color: #cde7ff;
+            border: 0.5px solid gray;
+            text-align: left;
+            font-size: 8 px;
+            margin-bottom: 10px;
+            padding: 10px 5px;
+            line-height: 1.3em;
+
+        }
+
+        .note b {
+            text-decoration: none;
+        }
+
+        .note a {
+            text-decoration: none;
+            color: #0c437b;
+        font-size:7px;
+
+        }
+
+        .details {
+            border: 0.5px solid gray;
+            text-align: left;
+            padding: 10px 20px;
+            font-size: 8px;
+            margin-bottom: 10px;
+
+        }
+
+        .details h2 {
+            font-size: 11px;
+
+        }
+
+        #Paycharges {
+            width: 100%;
+            font-size: 14px;
+            color: white;
+            background-color: #2BB673;
+            border-radius: 5px;
+            border: 0;
+            padding: 5px 0px;
+        }
+    #sttyle {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    #sttyle2 {
+      width: 30%;
+      margin-bottom: 10px;
+    }
+
+    #screen {
+      background-color: rgb(255, 223, 223);
+      text-align: center;
+      color: red;
+      margin: 0% auto;
+      font-family: monospace;
+      font-weight: 400;
+      font-size: 10px;
+      border-radius: 3px;
+      margin: 10px;
+    }
+    #screen2{
+      background-color: #00d54b;
+      text-align: center;
+      color: white;
+      margin: 0% auto;
+      font-family:sans-serif;
+      font-weight: 400;
+      font-size: 10px;
+      border-radius: 3px;
+      margin: 10px;
+      
+    }
+    #screen2 a {
+      color:#005eb8;
+      text-decoration: none;
+    }
+    
+
+    .Date {
+      color: white;
+      font-size: 10px;
+    }
+
+    .History {
+   
+      background-color: white;
+      border:0px;
+      margin: 0% auto;
+      margin-top: -25px;
+    }
+ .T-history{
+  background-color: #0c437b;
+  color: white;
+  padding: 0px 5px;
+  font-size: 10px;
+  border:  2px solid black;
+ }
+ .History h3{
+  background-color:#cae5ff;
+  color: black;
+  padding: 5px 3px ;
+  font-weight: 300;
+  border-bottom: 1px solid black;
+  margin-top: -10px;
+  border: 1px solid#dddddd ;
+  font-size: 14px;
+ }
+ #dd{
+  background-color:#cae5ff;
+  color: black;
+  padding: 5px 5px ;
+  font-weight: 300;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  border: 1px solid#dddddd ;
+ }
+ table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: -20px;
+  font-size: 12px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align:left;
+   padding:5px 2px; 
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+#Loadmore{
+  margin: 0% auto;
+  background-color: #dddddd;
+  color: black;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600px;
+  border-radius: 15px;
+  padding: 10px;
+  border: 0 ;
+  position:absolute;
+  margin-top: -10px;
+  opacity: 0.6;
+  transition: 1s ;
+}
+
+
+
+    footer {
+    padding:30px 5px;
+      background-color: white;
+    }
+    footer p {
+      font-size: 11px;
+    }
+    #red{
+      color: rgb(145, 23, 23);
+    }
+    #green{color: #0a6c2c;}
+  </style>
+</head>
+
+<body>
+  <div class="width">
+    <header>
+      <div class="logo">
+        <div logo1><img src="./assets/logo.jpg" /></div>
+      </div>
+      <button class="signout">Sign Out</button>
+      <div class="greetings">
+        Welcome Mcclenad Joe
+        <br />
+
+        <i class="Date"> </i>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="./home.html">Account &nbsp;   </a></li>
+        <li><a href="./about.html">About us &nbsp; </a></li>
+        <li><a href="./history.html">History&nbsp; </a></li>
+        <li>
+          <a href="mailto:cashmanagement@gmail.com" id="5"> Advocate</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+        <h1>Available Balance</h1>
+        <div class="Available">
+          <div>
+            <h5>TOTAL CHECKING 5671...</h5>
+            <h3>$70,904,456.09</h3>
+          </div>
+          <div>
+            <h5>SAVINGS...</h5>
+            <h3>$1,604,000.00</h3>
+          </div>
+          <div class="Cashapp" >
+            <img src="./assets/cashlogo.png" />
+
+            <b>Available</b>
+            <p id="balance">$56000.00</p>
+            <div class="Money"></div>
+            <button id="Transfer">Transfer</button>
+          </div>
+        </div>
+
+    </section>
+    <div style="margin-top: 30px">
+      <p
+        style="
+          text-align: center;
+          font-size: 13px;
+          color: gray;
+          background-color: white;
+          margin: 0px auto;
+          height: auto;
+          border-color: gray;
+          padding-top: 200px;
+            padding-bottom: 20px;
+            margin-top: -30px;
+        "
+      >
+        Equal Housing Opportunity<br />
+        Deposit products provided by JPMorgan Chase Bank,N.A Member FDIC
+        Credit cards are issued by JPMorgan Chase Bank Member FDIC<br />
+        &COPY;2023 JPMorgan Chase&Co.
+      </p>
+    </div>
+  </div>
+
+  <div
+    style="
+      background-color: rgb(212, 209, 209);
+      height: auto;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      text-align: center;
+      margin-top: -25px;
+    "
+  >
+    <h5 style="font-weight: normal">DISCLOSURES</h5>
+    <p>
+      Investment products and services are offered through
+      <strong>
+        J.P.Morgan Securities LLc (JPMS),a Member of
+        <a href="# " style="font-weight: 100">FINRA</a> and
+        <a href="#" style="font-weight: 100">SIPC</a></strong
+      >
+    </p>
+    <div
+      style="
+        border: 1px solid;
+        padding: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        font-weight: 500;
+      "
+    >
+      <p>
+        INVESTMENT AND INSURANCE PRODUCTS ARE : NOT A DEPOSIT - NOT FDIC
+        INSURED - NOT INSURED BY ANY FEDERAL GOVERNMENT AGENCY - NO BANK
+        GUARANTEE- MAY LOSE VALUE
+      </p>
+    </div>
+   
+  </div>
+  <script>
+    // document.getElementById('Loadmore').addEventListener('click', function(){ 
+    //   window.alert('Unable to load history') ; 
+     
+   // })
+    document.querySelector(".signout").addEventListener("click", function () {
+      window.alert("signed out");
+      document.location = "index.html";
+    });
+    const date = new Date();
+    document.querySelector(".Date").innerHTML = date;
+    console.log(date);
+    let balance = document.getElementById('balance').innerHTML;
+    balance = '56000';
+    let newCashapp = `
+          <div id="screen"></div>
+         
+          <img src="./assets/cashlogo.png" />
+          <b>Available</b>
+          <p id="balance">$${balance}.00</p>
+          <form>
+          <input type="text" maxlenght="13" placeholder='Enter cash tag' id="sttyle"class="
+          Cashtag" >
+          </br>
+          <input type="number" maxlenght='10'  placeholder="Enter amount" id="sttyle2" class="Amount" >
+          <input type="Password" id="sttyle2" placeholder="PIN" maxlenght="6" class="PIN">
+          <input type="button" id="Transfer" value="Deposit " class="Deposit"
+          >
+          <div id="screen2"></div>
+          </form>
+
+
+          `;
+    document.getElementById("Transfer").addEventListener("click", function () {
+      document.querySelector(".Cashapp").innerHTML = newCashapp;
+
+      document.querySelector('.Deposit').addEventListener('click', function (){
+      const Catag = document.querySelector('.Cashtag').value; 
+     let amount= document.querySelector(".Amount").value;
+     let PIN = document.querySelector('.PIN').value;
+    
+   
+      if (Catag=== "" || amount ==="" ){
+    document.getElementById( "screen").innerHTML = `<b> &#9432;</b> Enter correct info `;
+     }
+     else if (PIN !='0245'){
+      document.getElementById( "screen").innerHTML = `<b> &#9432;</b> Invalid Pin  `;
+    }
+    else if  ( PIN ==="0245"){
+      document.getElementById( "screen").innerHTML = `<b></b> `;
+      document.getElementById( "screen2").innerHTML = ` Are you Sure you want to Continue this transaction? <a href="#">Charges Applied<a/> <input type="checkbox" required id="Proceed">  `;
+          
+     } 
+     document.getElementById('Proceed').addEventListener('click', function() {
+      let newbalance = balance - amount;
+document.querySelector('.Cashapp').innerHTML=` 
+<div id="Reciept">
+<img src="./assets/succesful.png" />
+<p id="screen2" style="font-size: 8px; padding:2px">PLEASE DO NOT REFRESH THIS PAGE</p>
+
+
+<h1>Transaction successful</h1>
+<p> <b> New balance : </b> $${newbalance}.00</p>
+</div> 
+<div class="details">
+    <h2> Details </h2>
+    <hr>
+    <p> <b>Cash App:</b> $${Catag}</p>
+    <p> <b>Amount:</b> $${amount}</p>
+    <p> <b>Status:</b>Successful</p>
+    <p> <b>Transfer Charges: </b> $300 </p>
+    <hr>
+</div>
+
+<div>
+    <div class="note">
+
+        <p> <b>Note:</b>
+      This transaction has been successfully proccessed, and it is ready to be deposited to
+          
+              <b>  $${Catag} </b>
+            Immediately <b> Transfer Charges </b> is Confirmed.
+        </p>
+        <a href=mailto:cashmanagement111@gmail.com> Got a question? contact our advocate </a>
+    </div>
+    <input type="button" id="Paycharges" value="Pay Charges  " class="Deposit">
+
+    </form>
+
+`
+         document.getElementById("Paycharges").addEventListener('click', function (){
+          document.location="https://click.cash.app/ui6m/send2022"
+         })
+console.log(`Your new balance = $${newbalance}.00`);
+console.log('Cashtag :$' + Catag )
+console.log('Amount :$' + amount+'.00' );})
+      
+     })
+    
+    });
+
+
+    
+    //   let Cashtag = document.querySelector(".Cashtag").value;
+    //   let passcode = document.querySelector("PIN");
+  
+
+    //   document
+    //     .querySelector(".Deposit")
+    //     .addEventListener("click", function () {
+    //       if (Cashtag === "" || ampunt != Number || passcode != "5555") {
+    //         document.getElementById(
+    //           "screen"
+    //         ).innerHTML = `<b> &#9432;</b> Your Account is temporarily suspended`;
+    //       }
+    //else if (
+    //     Cashtag === String &&
+    //     ampunt === Number &&
+    //     passcode === "555"
+    //   ) {
+    //     console.log("logged");
+    //   } else {
+    //     document.querySelector(".Cashapp").innerHTML = "BRo";
+    //   }
+
+    // });
+  </script>
+</body>
+</html>

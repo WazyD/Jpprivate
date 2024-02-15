@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chase</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="logo"><img src="./assets/logo.jpg" alt="" /></div>
+    <section>
+      <div id="screen"></div>
+      <form>
+        <label for=" username"> Enter your username</label>
+        <br />
+        <input type="text" name=" username" id="userName" maxlength="20" />
+        <br />
+        <label for="Password"> Enter your Password</label>
+        <br />
+        <input type="password" name="Password" id="Pass" />
+        <br />
+        <input type="button" id="Signin" value="Sign in" />
+      </form>
+      <a href="#">Forgot Usernmae or Password?</a>
+    </section>
+    <footer>
+      <div class="white">
+        <p>
+          Equal Housing Opportunity<br />
+          Deposit products provided by JPMorgan Chase Bank,N.A Member FDIC
+          Credit cards are issued by JPMorgan Chase Bank Member FDIC<br />
+          &COPY;2023 JPMorgan Chase&Co.
+        </p>
+      </div>
+      <div class="brown">
+        <h5 style="font-weight: normal">DISCLOSURES</h5>
+        <p>
+          Investment products and services are offered through
+          <strong>
+            J.P.Morgan Securities LLc (JPMS),a Member of
+            <a href="https://www.finra.org/ " style="font-weight: 100">FINRA</a>
+            and
+            <a href="https://www.sipc.org/" style="font-weight: 100"
+              >SIPC</a
+            ></strong
+          >
+        </p>
+        <div class="diff">
+          <p>
+            INVESTMENT AND INSURANCE PRODUCTS ARE : NOT A DEPOSIT - NOT FDIC
+            INSURED - NOT INSURED BY ANY FEDERAL GOVERNMENT AGENCY - NO BANK
+            GUARANTEE- MAY LOSE VALUE
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("Signin").addEventListener("click", function () {
+        let username = document.getElementById("userName").value;
+        let password = document.getElementById("Pass").value;
+        // let userNames = ["King5815", "KingJoe"];
+        // let passwords = ["Godfirst581@", "Godstime581@"];
+
+        if (username === "" || password === "") {
+          document.getElementById(
+            "screen"
+          ).innerHTML = `<b> &#9432;</b> Please enter your username and password`;
+        } else if (username != "King5815" || password != "Godfirst") {
+          document.getElementById(
+            "screen"
+          ).innerHTML = ` <b> &#9432;</b> incorrect username or password`;
+        } else if (username === "King5815" && password === "Godfirst") {
+          document.location = "home.html";
+        }
+      });
+    </script>
+  </body>
+</html>

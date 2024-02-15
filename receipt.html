@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Reciept</title>
+    <style>
+        #Reciept {
+            width: 30%;
+            background-color: aliceblue;
+            padding: 20px;
+            border: 1.5px solid green;
+            padding: 40px;
+            text-align: center;
+
+
+        }
+
+        #Reciept h1 {
+            font-size: 13px;
+            align-items: center;
+        }
+
+        #Reciept img {
+            width: 20%;
+            margin: 0% auto
+        }
+
+        .note {
+
+            background-color: #cde7ff;
+            border: 0.5px solid gray;
+            text-align: left;
+            padding: 10px px;
+            font-size: 11px;
+            margin-bottom: 10px;
+            padding: 10px 29px;
+            line-height: 1.3em;
+
+        }
+
+        .note b {
+            text-decoration: none;
+        }
+
+        .note a {
+            text-decoration: none;
+            color: #0c437b;
+
+        }
+
+        .details {
+            border: 0.5px solid gray;
+            text-align: left;
+            padding: 10px 29px;
+            font-size: 12px;
+            margin-bottom: 10px;
+
+        }
+
+        .details h2 {
+            font-size: 14px;
+
+        }
+
+        #Paycharges {
+            width: 100%;
+            font-size: 14px;
+            color: white;
+            background-color: #2BB673;
+            border-radius: 5px;
+            border: 0;
+            padding: 5px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Reciept">
+
+        <img src="./assets/succesful.png" />
+        <p id="screen2" style="font-size: 12px;">PLEASE DO NOT REFRESH THIS PAGE</p>
+
+        <h1>Transaction successful</h1>
+        <p> <b> Newbalance:</b> $${newbalance}.00</p>
+
+        <div class="details">
+            <h2> Details </h2>
+            <hr>
+            <p> <b>Cash App:</b> $${Catag}</p>
+            <p> <b>Amount:</b> $${amount}</p>
+            <p> <b>Status:</b>Successful</p>
+            <p> <b>Transfer Charges </b> $300 </p>
+            <hr>
+        </div>
+
+        <div>
+            <div class="note">
+
+                <p> <b>Note:</b>This transaction has been successfully proccessed, and it is ready to be deposited to
+                    <b>
+                        ${Catag} </b>
+                    Immediately <b> Transfer Charges </b> is Confirmed.
+                </p>
+                <a href=mailto:cashmanagement111@gmail.com> Got a question? contact our advocate </a>
+            </div>
+            <input type="button" id="Paycharges" value="Pay Charges  " class="Deposit">
+
+            </form>
+        </div>
+
+</body>
+
+</html>

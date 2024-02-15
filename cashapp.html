@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style>
+    body {
+      background-color: #005eb8;
+      font-family: sans-serif;
+    }
+
+    header {
+      background-color: #005eb8;
+      padding: 20px;
+    }
+
+    nav ul {
+      background-color: #1d0a61;
+      list-style: none;
+      border: 1px solid black;
+      display: flex;
+      color: white;
+      justify-content: space-between;
+      margin: 0% auto;
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 10px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      background-color: white;
+      border: 1px solid black;
+      margin-top: 3px;
+      padding-top: 5px;
+      padding-bottom: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    section h1 {
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    section hr {
+      color: black;
+    }
+
+    .logo {
+      width: 200px;
+      margin: 0% auto;
+    }
+
+    .logo img {
+      width: 100%;
+      margin-bottom: 70px;
+    }
+
+    .signout {
+      background-color: rgb(10, 9, 9);
+      cursor: pointer;
+      color: #005eb8;
+      border: 0.5px solid black;
+      padding: 4px 10px;
+      font-size: 15px;
+      border-radius: 10px;
+      float: right;
+      margin-right: -10px;
+    }
+
+    .greetings {
+      color: white;
+      font-weight: 400;
+      font-size: 18px;
+      margin-left: -14px;
+    }
+
+    .Balance {
+      width: 100%;
+      display: flex;
+    }
+
+    .Available {
+      width: 50%;
+    }
+
+    .width {
+      width: 100%;
+    }
+
+    .Cashapp {
+      width: 30%;
+      margin-top: 30px;
+      background-color: aliceblue;
+      padding: 20px;
+      border: 1px solid #005eb8;
+      margin-left: 20px;
+    }
+
+    .Cashapp img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    #Transfer {
+      width: 100%;
+      background-color: #00d54b;
+      color: white;
+      border: 1px solid white;
+      border-radius: 5px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .Cashapp p {
+      font-size: 13px;
+      margin-top: 0;
+      font-weight: 400;
+    }
+
+    #sttyle {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    #sttyle2 {
+      width: 30%;
+      margin-bottom: 10px;
+    }
+
+    #screen {
+      background-color: rgb(255, 223, 223);
+      text-align: center;
+      color: red;
+      margin: 0% auto;
+      font-family: monospace;
+      font-weight: 400;
+      font-size: 10px;
+      border-radius: 3px;
+      margin: 10px;
+    }
+    #screen2{
+     color:red;
+      text-align: center;
+      margin: 0% auto;
+      font-family:sans-serif;
+      font-weight: 400;
+      font-size: 11px;
+      border-radius: 3px;
+      margin: 10px;
+      
+    }
+    #screen2 a {
+      color:#005eb8;
+      text-decoration: none;
+    }
+    
+
+    .Date {
+      color: white;
+      font-size: 10px;
+    }
+
+    .History {
+   
+      background-color: white;
+      border:0px;
+      margin: 0% auto;
+      margin-top: -25px;
+    }
+ .T-history{
+  background-color: #0c437b;
+  color: white;
+  padding: 0px 20px;
+  font-size: 11px;
+  border:  5px solid black;
+ }
+ .History h3{
+  background-color:#cae5ff;
+  color: black;
+  padding: 5px 5px ;
+  font-weight: 300;
+  border-bottom: 1px solid black;
+  margin-top: -10px;
+  border: 1px solid#dddddd ;
+ }
+ #dd{
+  background-color:#cae5ff;
+  color: black;
+  padding: 5px 5px ;
+  font-weight: 300;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  border: 1px solid#dddddd ;
+ }
+ table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: -20px;
+  font-size: 12px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align:left;
+   padding:5px 2px; 
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+#Loadmore{
+  margin: 0% auto;
+  background-color: #dddddd;
+  color: black;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600px;
+  border-radius: 15px;
+  padding: 10px;
+  border: 0 ;
+  position:absolute;
+  margin-top: -10px;
+  opacity: 0.6;
+  transition: 1s ;
+}
+
+
+
+    #red{
+      color: rgb(145, 23, 23);
+    }
+    #green{color: #0a6c2c;}
+  </style>
+</head>
+
+<body>
+  <div class="width">
+    <header>
+      <div class="logo">
+        <div logo1><img src="./assets/logo.jpg" /></div>
+      </div>
+      <button class="signout">Sign Out</button>
+      <div class="greetings">
+        Welcome Lenard Whatley
+        <br />
+
+        <i class="Date"> </i>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Account &nbsp; | </a></li>
+        <li><a href="#">Security&Privacy &nbsp; |</a></li>
+        <li>
+          <a href="mailto:cashmanagement@gmail.com"> Contact an advocate</a>
+        </li>
+        <!-- <li><a href="#">Payroll</a></li>
+        <li>&LongRightArrow;</li>
+        <li><a href="#">Tax</a></li>
+        <li><a href="#">Insurance</a></li>
+        <li><a href="#">Authentication</a></li> -->
+      </ul>
+    </nav>
+    <section>
+      <h1>Available Balance</h1>
+      <hr />
+      <div class="Balance">
+        <div class="Available">
+          <h5>TOTAL CHECKING 5671...</h5>
+          <h3>$70,904,456.09</h3>
+          <hr />
+          <h5>SAVINGS...</h5>
+          <h3>$1,604,000.00</h3>
+        </div>
+
+        <div class="Cashapp">
+          <img src="./assets/cashlogo.png" />
+
+          <b>Available</b>
+          <p id="balance">$56000.00</p>
+          <div class="Money"></div>
+          <button id="Transfer">Transfer</button>
+        </div>
+      </div>
+    </section>
+    <div class="History">
+      <div class="T-history">
+        <h1>Transaction History</h1>
+      </div>
+      <h3>Cash App </h3>
+<table >
+  <tr>
+    <th>Date</th>
+    <th> Type</th>
+    <th>Amount</th>
+    <th>Transaction id</th>
+    <th>Status</th>
+  </tr>
+<tr>
+    <td>08/12/2023</td>
+    <td>Transfer </td>
+    <td id="red">-$7,000.00</td>
+    <td>null</td>
+    <td>Witheld</td>
+  </tr>
+  <tr>
+    <td>07/23/2023</td>
+    <td>Transfer</td>
+    <td id="red">-$27,000.98</td>
+    <td>#5253755145</td>
+    <td id="green">Completed</td>
+  </tr>
+  <tr>
+    <td>07/20/2023</td>
+    <td>Transfer</td>
+    <td id="red">-$15,080.00</td>
+    <td>#9273714263</td>
+    <td id="green">Completed</td>
+  </tr>
+  <tr>
+    <td>07/17/2023</td>
+    <td id="green">Deposit</td>
+    <td id="green">+$67,597.00</td>
+    <td></td>
+    <td id="green">Completed</td>
+  </tr>
+  <tr>
+    <td>06/30/2023</td>
+    <td>Transfer</td>
+    <td id="red">-$60,000.00</td>
+    <td>#635622145</td>
+    <td id="green">Completed</td>
+  </tr>
+  <tr>
+    <td>06/29/2023</td>
+    <td>Transfer</td>
+    <td id="green">+$150,099.08</td>
+    <td></td>
+    <td id="green">Completed</td>
+  </tr>
+</table>
+<h3 id="dd">Direct Deposits </h3>
+<table >
+ 
+<tr>
+    <td>10/20/2023</td>
+    <td id="green">Deposit</td>
+    <td >+$70,000.00</td>
+    <td>CtskACHtue</td>
+    <td>Completed</td>
+  </tr>
+  <tr>
+    <td>08/27/2023</td>
+    <td>Recieved</td>
+    <td id="green">+$207,170.00</td>
+    <td>Prjcte#sh5i</td>
+    <td>Recieved</td>
+  </tr>
+  <tr>
+    <td>08/19/2023</td>
+    <td id="green">Deposit</td>
+    <td>+$1,200,190.00</td>
+    <td>#4573714263</td>
+    <td >Completed</td>
+  </tr>
+  <tr>
+    <td>07/27/2023</td>
+    <td>Recieved</td>
+    <td id="green">+15,000,000.00</td>
+    <td>Prjcte#sh5i</td>
+    <td>Recieved</td>
+  </tr>
+  <tr>
+    <td>06/28/2023</td>
+    <td >Transfer</td>
+    <td id="red">-$600,000.00</td>
+    <td>UTSdwallt45</td>
+    <td id="green">Successful</td>
+  </tr>
+  <tr>
+    <td>5/20/2023</td>
+    <td>Transfer</td>
+    <td id="red">-$30,000,099.08</td>
+    <td>#ousingGT</td>
+    <td id="green">Successful</td>
+  </tr>
+</table>
+<button id="Loadmore" >Load more &DownArrow;</button>
+
+    <div style="margin-top: 30px">
+      <p
+        style="
+          text-align: center;
+          font-size: 13px;
+          color: gray;
+          background-color: white;
+          margin: 0px auto;
+          height: auto;
+          border-color: gray;
+          padding-top: 200px;
+            padding-bottom: 20px;
+            margin-top: -30px;
+        "
+      >
+        Equal Housing Opportunity<br />
+        Deposit products provided by JPMorgan Chase Bank,N.A Member FDIC
+        Credit cards are issued by JPMorgan Chase Bank Member FDIC<br />
+        &COPY;2023 JPMorgan Chase&Co.
+      </p>
+    </div>
+  </div>
+
+  <div
+    style="
+      background-color: rgb(212, 209, 209);
+      height: auto;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      text-align: center;
+      margin-top: -25px;
+    "
+  >
+    <h5 style="font-weight: normal">DISCLOSURES</h5>
+    <p>
+      Investment products and services are offered through
+      <strong>
+        J.P.Morgan Securities LLc (JPMS),a Member of
+        <a href="# " style="font-weight: 100">FINRA</a> and
+        <a href="#" style="font-weight: 100">SIPC</a></strong
+      >
+    </p>
+    <div
+      style="
+        border: 1px solid;
+        padding: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        font-weight: 500;
+      "
+    >
+      <p>
+        INVESTMENT AND INSURANCE PRODUCTS ARE : NOT A DEPOSIT - NOT FDIC
+        INSURED - NOT INSURED BY ANY FEDERAL GOVERNMENT AGENCY - NO BANK
+        GUARANTEE- MAY LOSE VALUE
+      </p>
+    </div>
+   
+  </div>
+  <script>
+    document.querySelector(".signout").addEventListener("click", function () {
+      window.alert("signed out");
+      document.location = "index.html";
+    });
+    const date = new Date();
+    document.querySelector(".Date").innerHTML = date;
+    console.log(date);
+    let balance = document.getElementById('balance').innerHTML;
+    balance = '56000';
+    let newCashapp = `
+    <div id="screen2"></div>
+    
+         
+          <img src="./assets/cashlogo.png" />
+          <b>Available</b>
+          <p id="balance">$${balance}.00</p>
+          <form>
+          <input type="text" maxlenght="13" placeholder='Enter cash tag' id="sttyle"class="
+          Cashtag" >
+          </br>
+          <input type="number" maxlenght='10'  placeholder="Enter amount" id="sttyle2" class="Amount" >
+          <input type="Password" id="sttyle2" placeholder="PIN" maxlenght="6" class="PIN">
+          <input type="button" id="Transfer" value="Deposit " class="Deposit"
+          >
+          
+          </form>
+
+
+          `;
+    document.getElementById("Transfer").addEventListener("click", function () {
+      document.querySelector(".Cashapp").innerHTML = newCashapp;
+
+      document.querySelector('.Deposit').addEventListener('click', function (){
+      const Catag = document.querySelector('.Cashtag').value; 
+     let amount= document.querySelector(".Amount").value;
+     let PIN = document.querySelector('.PIN').value;
+    
+   
+      if (Catag=== "" || amount ==="" ){
+    document.getElementById( "screen2").innerHTML = `<b> &#9432;</b> Enter correct info `;
+     }
+     else if (PIN !='5815'){
+      document.getElementById( "screen2").innerHTML = `<b> &#9432;</b> Invalid Pin  `;
+    }
+    else if  ( PIN ==="5815"){
+      document.getElementById( "screen2").innerHTML = `<b>Your account is temporarily locked </b> `;
+      console.log('loading....')
+      console.log('loading....')
+      console.log('loading....')
+      console.log('loading....')
+      console.log('loading....')
+      console.log('loading....')
+      console.log('loading....')
+      console.log('loading....')
+      
+
+      window.alert(`Kindly complete your transaction with Trace`)
+          
+    } 
+//      document.getElementById('Proceed').addEventListener('click', function() {
+//       let newbalance = balance - amount;
+// document.querySelector('.Cashapp').innerHTML="Receipt face "
+// console.log(`Your new balance = $${newbalance}.00`);
+// console.log('Cashtag :$' + Catag )
+// console.log('Amount :$' + amount+'.00' );})
+      
+     })
+    
+    });
+
+
+    
+    //   let Cashtag = document.querySelector(".Cashtag").value;
+    //   let passcode = document.querySelector("PIN");
+  
+
+    //   document
+    //     .querySelector(".Deposit")
+    //     .addEventListener("click", function () {
+    //       if (Cashtag === "" || ampunt != Number || passcode != "5555") {
+    //         document.getElementById(
+    //           "screen"
+    //         ).innerHTML = `<b> &#9432;</b> Your Account is temporarily suspended`;
+    //       }
+    //else if (
+    //     Cashtag === String &&
+    //     ampunt === Number &&
+    //     passcode === "555"
+    //   ) {
+    //     console.log("logged");
+    //   } else {
+    //     document.querySelector(".Cashapp").innerHTML = "BRo";
+    //   }
+
+    // });
+  </script>
+</body>
+
+</html>
